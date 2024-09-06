@@ -14,7 +14,7 @@ export default ((opts?: Options) => {
       <footer class={`${displayClass ?? ""}`}>
         <hr />
         <p>
-          All Content open for use for Free!!! <br> Please consider Donating!!!
+          All Content open for use for Free!!! Please consider Donating!!!
         </p>
         <ul>
           {Object.entries(links).map(([text, link]) => (
