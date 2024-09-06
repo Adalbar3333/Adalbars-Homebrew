@@ -34,7 +34,7 @@ const config: QuartzConfig = {
           lightgray: "#87614F", // Darker warm gray
           gray: "#926F5F", // Slate brown
           darkgray: "#9C7C6E", // Light off-white
-          dark: "#a5887b", // Softer white for text
+          dark: "#42271A", // Softer white for text
           secondary: "#7b97aa", // Muted blue for accents
           tertiary: "#b45e49", // Brick red
           highlight: "rgba(143, 159, 169, 0.15)", // Light blue highlight
