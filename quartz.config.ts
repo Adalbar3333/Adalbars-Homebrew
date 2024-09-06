@@ -27,7 +27,7 @@ const config: QuartzConfig = {
           dark: "#42271A", // Dark chocolate brown
           secondary: "#7b97aa", // Muted blue for accents
           tertiary: "#b45e49", // Brick red
-          highlight: "rgba(143, 159, 169, 0.15)", // Light blue highlight
+          highlight: "rgba(78, 103, 141, 0.15)", // Light blue highlight
         },
         darkMode: {
           light: "#42271A", // Warm dark brown
