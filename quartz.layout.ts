@@ -8,6 +8,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       "Discord Dungeons and Dragons Server - The Tazzurath Expanse": "https://discord.gg/22dw2Z8zxR",
+      "Adalbär's Cashapp": "https://cash.app/$Adalbar3333",
     },
   }),
 }
