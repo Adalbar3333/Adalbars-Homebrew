@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Adalbär's Homebrew Collection",
+    pageTitle: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
