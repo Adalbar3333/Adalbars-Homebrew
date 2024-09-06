@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "The Tazzurath Expanse: Racial Adjustments",
+    pageTitle: "Adalbär's Homebrew Collection",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
