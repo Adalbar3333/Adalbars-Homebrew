@@ -85,8 +85,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Races/Half-Giant.md",
-                "mode": "preview",
+                "file": "Races/Urseinen.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Races/Half-Giant.md",
+                "file": "Races/Urseinen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Races/Half-Giant.md",
+                "file": "Races/Urseinen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Races/Half-Giant.md"
+                "file": "Races/Urseinen.md"
               }
             }
           }
@@ -221,13 +221,13 @@
   },
   "active": "864e1096d4b750d0",
   "lastOpenFiles": [
-    "Races/Minotaur.md",
-    "Races/Large Race Rules.md",
-    "index.md",
-    "Races/Ogre.md",
     "Races/Treeant.md",
     "Races/Orc.md",
+    "Races/Ogre.md",
+    "Races/Minotaur.md",
     "Races/Half-Giant.md",
+    "Races/Large Race Rules.md",
+    "index.md",
     "Untitled.md",
     "Races/Urseinen.md",
     "Races",
