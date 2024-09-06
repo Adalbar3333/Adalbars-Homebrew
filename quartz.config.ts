@@ -20,14 +20,14 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#f5ebe0", // Warm beige
-          lightgray: "#e5cdbb", // Light brownish gray
-          gray: "#b8a48f", // Muted warm gray
-          darkgray: "#4e3d32", // Warm dark gray
-          dark: "#2e1f14", // Dark chocolate brown
-          secondary: "#b45e49", // Brick red
-          tertiary: "#84a59d", // Complementary soft blue
-          highlight: "rgba(143, 159, 169, 0.15)", // Light blue for highlights
+          light: "#A5887B", // Warm beige
+          lightgray: "#D1B4A6", // Light brownish gray
+          gray: "#B1795C", // Muted warm gray
+          darkgray: "#602E15", // Warm dark gray
+          dark: "#42271A", // Dark chocolate brown
+          secondary: "#7b97aa", // Muted blue for accents
+          tertiary: "#b45e49", // Brick red
+          highlight: "rgba(143, 159, 169, 0.15)", // Light blue highlight
         },
         darkMode: {
           light: "#42271A", // Warm dark brown
