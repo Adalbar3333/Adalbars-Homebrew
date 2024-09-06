@@ -1,3 +1,1 @@
-[[Large Race Rules]]
-
-h
+![[Large Race Rules]]

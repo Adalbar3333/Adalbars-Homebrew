@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Races/Orc.md",
+                "file": "Races/Half-Giant.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Races/Orc.md",
+                "file": "Races/Half-Giant.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Races/Orc.md",
+                "file": "Races/Half-Giant.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Races/Orc.md"
+                "file": "Races/Half-Giant.md"
               }
             }
           }
@@ -148,12 +148,12 @@
   },
   "active": "b24f075cfb6e663b",
   "lastOpenFiles": [
-    "index.md",
+    "Races/Minotaur.md",
+    "Races/Ogre.md",
     "Races/Urseinen.md",
     "Races/Treeant.md",
     "Races/Orc.md",
-    "Races/Ogre.md",
-    "Races/Minotaur.md",
+    "index.md",
     "Races/Large Race Rules.md",
     "Races/Half-Giant.md",
     "Tazzurath/The Cult of Syllanaxen.md",
