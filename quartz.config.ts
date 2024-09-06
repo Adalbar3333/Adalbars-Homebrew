@@ -30,11 +30,11 @@ const config: QuartzConfig = {
           highlight: "rgba(143, 159, 169, 0.15)", // Light blue for highlights
         },
         darkMode: {
-          light: "#2b2622", // Warm dark brown
-          lightgray: "#39312e", // Darker warm gray
-          gray: "#746b64", // Slate brown
-          darkgray: "#d1c5c0", // Light off-white
-          dark: "#ebe3db", // Softer white for text
+          light: "#65483B", // Warm dark brown
+          lightgray: "#87614F", // Darker warm gray
+          gray: "#926F5F", // Slate brown
+          darkgray: "#9C7C6E", // Light off-white
+          dark: "#a5887b", // Softer white for text
           secondary: "#7b97aa", // Muted blue for accents
           tertiary: "#b45e49", // Brick red
           highlight: "rgba(143, 159, 169, 0.15)", // Light blue highlight
