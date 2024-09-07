@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Races/Half-Giant.md",
-                "mode": "source",
-                "source": false
+                "file": "Races/Urseinen.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "b5d9f7870c19e4a0",
+            "type": "leaf",
+            "state": {
+              "type": "css-editor-view",
+              "state": {
+                "filename": "textandimg.css"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Races/Half-Giant.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +112,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Races/Half-Giant.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +133,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Races/Half-Giant.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,18 +153,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b24f075cfb6e663b",
+  "active": "b5d9f7870c19e4a0",
   "lastOpenFiles": [
-    "Races/Minotaur.md",
-    "Races/Ogre.md",
     "Races/Urseinen.md",
-    "Races/Treeant.md",
-    "Races/Orc.md",
     "index.md",
-    "Races/Large Race Rules.md",
-    "Races/Half-Giant.md",
+    "images/AdalbarCasual.png",
+    "images/AdalbarCasual",
+    "images",
+    "AdalbarCasual 2",
+    "AdalbarCasual 1",
+    "AdalbarCasual",
     "Tazzurath/The Cult of Syllanaxen.md",
     "Untitled.md",
+    "Pasted image 20240906235555.png",
+    "Races/Minotaur.md",
+    "Races/Large Race Rules.md",
+    "Races/Half-Giant.md",
+    "Races/Ogre.md",
+    "Races/Treeant.md",
+    "Races/Orc.md",
     "Races",
     "Racial Adjustments.canvas",
     "Draconic Lineage Level Adjustment.md",

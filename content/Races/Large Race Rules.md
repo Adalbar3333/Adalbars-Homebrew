@@ -1,9 +1,11 @@
-### More Mass, More Clumsy:
+### More Strength, More Clumsy:
 As a large race, you are capable of carrying much more. Because of this, you can increase your Strength Score beyond 20, to 22. However, your Dexterity Score cannot surpass 18. In addition, you naturally have a +1 to Strength, and a -1 to Dexterity. 
+In addition to this, you gain advantage on all Strength Checks, but not attacks or saves. 
 ### Bigger Target:
 Because you are larger, it makes you easier to hit. Because of this, you calculate all Armor Class as 9 + bonuses. 
 ### Larger Body, Larger Armor:
 Because you are larger than most, you require much more material to make your weapons and armor. All gear that is warn by you costs 4 times it's original amount. (This does not apply to magical gear)
+In addition to your body being larger, it is harder for you to move around. You can take the action to squeeze into a medium space such as a doorway costing half your movement.
 ### Large Arms:
 You can use large weapons. These weapons have a bonus damage dice of 1d4. This additional damage is either the weapons damage dice, or bludgeoning (unless ranged). These weapons cost 4 times the original amount. (This does not apply to magical weapons)
 ### Attack Range:
