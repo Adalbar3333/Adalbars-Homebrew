@@ -1,79 +1,6 @@
 @use "../base.scss";
 @use "../variables.scss" as *;
 
-/* === README ===
-	Snippet: MCL Multi Column / Author: Faiz Khuzaimah / twitter: @faizkhuzaimah / github: https://github.com/efemkay
-
-	Ver 0.10.0 (updated 2024-09-01)
-	- introduce fw dw and pw
-	- added left-right margin for Float Callout
-	- refactor List Column code to improve performance
-	Ver 0.9.10 (updated 2024-06-26)
-	- fix issues #81 and #89
-	Ver 0.9.9 (updated 2024-01-25)
-	- code cleanup (including -small -medium -large)
-	- improve css performance on float but require cssclass use again
-	Ver 0.9.8 (updated 2023-11-03)
-	- fixes on sub-callout becomes flexible height (and introduce option for such)
-	Ver 0.9.7 (updated 2023-10-13)
-	- GH FR issue #41, #42 and fixed GH issue #35. MC Callout now supports sub-blockquote and sub-paragraph
-	- GH FR issue #43. MC Callout now supports Multi Column within Multi Column
-	Ver 0.9.5 (updated 2023-07-30)
-	- fixes on minimal float affecting Minimal own wide table feature
-	- fixes on properties padding affecting Minimal
-	Ver 0.9.4 (updated 2023-07-06)
-	- improved MC Callout compatibility with Minimal theme V7.0
-	- improved MC Callout compatibility with Blue Topaz
-	Ver 0.9.3 (updated 2023-06-24)
-	- add support for List Column for li that's also a header
-	- fixes on column ruler to apply properly only for List Column on first ul only
-	- fixes on Float Callout in LP not floating due to additional div layer
-	Ver 0.9.2 (updated 2023-05-27)
-	- fix MC List Card mistakenly affect non List Card bullet list padding in same note
-	- fix obsidian default bullet "draw" not rendered properly in List Column (for the ones using tag and contextual typography plugin)
-	Ver 0.9.1 (updated 2023-04-06)
-	- fix MC "fixed center" option not properly coded
-	- fix MC List Grid previous not support sublist
-	- fix MC List Column margin top for first column
-	- fix MC List Grid for first bullet header
-	Ver 0.9.0 (updated 2023-04-01)
-	- MC - add option to hide SNW block ref for images in MC Callout
-	- MC - added wide option for List Grid/Card
-	- MC - added option to adjust float callout top margin
-	- MC - added fixed width option
-	- fix support minimal Callout style Outlined
-	- List Column/Grid/Card fully support :has()
-
-	What is this snippet for?
-	- to allow Obsidian users to change the layout with preset css by just specifying
-	  the cssClass in the frontmatter (YAML) or naming the Callout block
-	- available cssClass
-		- cssClass: two-column-list
-		- cssClass: {.two-column-list-block}
-		- cssClass: three-column-list
-		- cssClass: {.three-column-list-block}
-		- cssClass: multi-column-list
-	- available Callout format
-		- [!multi-column]
-		- [!blank] / [!blank-container]
-
-	Compatibility
-	- tested to work fine with the following Community Theme
-		- Default Theme
-		- Big Sur / Blue Topaz / California Cost / Notation / Pisum / Prism / Things / Typewriter (with minor issue on title color)
-	- known to be not working
-		- Primary (due to the theme heaving theming, box-shadow and so on)
-
-	Credits
-	- Kevin Powell Youtube channel
-	- https://css-tricks.com/
-	- discord OMG members @Cáo thoát tục (Cáo thoát tục#6993), @mulfok (mulfok#6931) and @Rainbell (Rainbell#3617)
-	- kepano for accomodating my snippets adjustment
-	- trainbuffer for numerous help and assisted css snippets
-*/
-
-
-
 body{
 	/* for list column, grid and card */
 	--list-min-width: 200px;
@@ -129,14 +56,6 @@ body{
 	.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="dw8"].callout { flex: 8 0 auto; }
 	.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="dw9"].callout { flex: 9 0 auto; }
 
-
-
-
-/* === Multi Column Callout (MCC) === */
-	/* 	some issues still persists
-		(2) some theme uses transparency to affect .callout-title */
-
-	/* common MCC variables */
 	body {
 		--mcc-img-snw-display: none;
 		--callout-min-width: 200px;
@@ -274,11 +193,6 @@ body{
 	.callout[data-callout*="blank"].callout > .callout-content {display: contents;}
 	.callout[data-callout*="blank"].callout { border: 0; padding-top: 0; padding-inline: 5px; background: unset; box-shadow: unset; }
 
-	/* -- No Margin -- */
-	/* issues still persists
-	   - headers font size not same
-	   - "no-margin" not fully workable in editing view due to wide-page override for Minimal theme
-	*/
 	.callout[data-callout-metadata*="no-margin"]:is(.cm-callout, .callout.callout, .callout.callout .callout-content) {margin: 0; padding: 0;}
 
 	/* -- No Margin for only child -- */
@@ -376,8 +290,6 @@ body{
 			.embedded-backlinks { clear: both; }
 
 		/* for Blockquote underlap the float layout -- to remove by 30Jun2024, no longer needed */
-			/* .markdown-preview-view :is(blockquote) { overflow-x: auto; } /* fix for blockquote underlap */
-			/* .markdown-preview-view :is(p) { overflow: unset; } /* fix for para not wrapping around float. applicable for Willemstad */
 
 		/* for SNW plugin */
 		div:is([data-callout-metadata*="caption"],[data-callout-metadata*="left"],[data-callout-metadata*="right"]).callout > .callout-content > p .snw-embed-preview { display: var(--float-callout-snw-display); width: min-content; height: min-content; }
@@ -400,7 +312,6 @@ body{
 			}
 		}
 
-		/* Minimal. Previous Minimal Float but with performance issue. Kept for reference until 30 June 2024 */ /*
 		:is(body[class*="minimal-tab-title"] .markdown-source-view.mod-cm6.is-readable-line-width:not(:has(table)), .minimal-float.markdown-source-view.mod-cm6) .cm-sizer { max-width: var(--max-width); width: var(--line-width); }
 
 		:is(body[class*="minimal-tab-title"] .markdown-source-view.mod-cm6.is-readable-line-width:not(:has(table)), .minimal-float.markdown-source-view.mod-cm6) .cm-contentContainer.cm-contentContainer>.cm-content>div,
@@ -425,10 +336,6 @@ body{
 
 
 /* === List Column ===*/
-	/* supported for (1) css :has(), (2) yaml cssclass, (3) CT plugin, and (4) MA plugin
-		- CSS :has() can be applied to sublists, so no column rule. CT plugin apply to div that houses the ul, so column gap is different
-		- xx-column-list for first level only list, but apply anywhere but xx-column-list-block apply at block level. Both require JV's Markdown Attributes plugin
-	*/
 
 
 	/* -- List Column/Grid/Card general styling -- */
@@ -590,293 +497,3 @@ body{
 		/* Sanctum */
 		.markdown-rendered .tag-mcllist-card ul img[alt*=right] {margin: 0;}
 
-
-
-/* === Style Settings === */
-
-/* @settings
-
-name: Modular CSS Layout - Multi Column
-id: modular-css-layout-mc
-settings:
-
-    -
-        id: multi-column-title
-        title: Multi Column Callout Settings
-        type: heading
-        level: 1
-		collapsed: true
-
-	-
-        id: mc-callout-general-title
-        title: MCC -- General
-        type: heading
-        level: 2
-		collapsed: false
-	-
-		id: mcc-img-snw-display
-		title: Hide SNW indicator for images in MC Callout
-		type: variable-select
-		default: none
-		options:
-			-
-				label: Show
-				value: inline
-			-
-				label: Hide
-				value: none
-
-	-
-        id: mc-callout-width-title
-        title: MCC -- Width
-        type: heading
-        level: 2
-		collapsed: false
-    -
-        id: callout-min-width
-        title: Minimum Sub-Callout Width
-        description: for sub-callout in [!multi-column]. in px units
-        type: variable-number-slider
-        default: 200
-        min: 100
-        max: 500
-        step: 50
-		format: px
-	-
-        id: callout-nowrap-min-width
-        title: Minimum NO-WRAP Sub-Callout Width
-        description: for sub-callout in [!multi-column|no-wrap]. in px units
-        type: variable-number-slider
-        default: 250
-        min: 100
-        max: 500
-        step: 50
-		format: px
-
-	-
-        id: mc-callout-gap-title
-        title: MCC -- Gap & Margin
-        type: heading
-        level: 2
-		collapsed: false
-    -
-        id: callout-gap
-        title: Sub-Callout Gap (any unit)
-        description: NO spacing between figure and unit
-        type: variable-text
-        default: 1em
-	-
-		id: callout-margin
-		title: Sub-Callout Margin (any unit)
-		description: to allow some spacing for box-shadow
-		type: variable-text
-		default: 0px
-
-
-
-	-
-        id: float-callout-title
-        title: Float Callout Settings
-        type: heading
-        level: 1
-		collapsed: true
-
-	-
-        id: float-callout-general-title
-        title: FC -- General
-        type: heading
-        level: 2
-		collapsed: false
-
-	-
-		id: float-callout-snw-display
-		title: Hide SNW indicator in Callout Float / Aside
-		type: variable-select
-		default: none
-		options:
-			-
-				label: Show
-				value: inline-block
-			-
-				label: Hide
-				value: none
-
-	-
-        id: float-width-title
-        title: FC -- Width
-        type: heading
-        level: 2
-		collapsed: false
-    -
-        id: float-small-width
-        title: Floating Callout Width - Small (in px)
-        type: variable-number-slider
-        default: 300
-        min: 200
-        max: 450
-        step: 50
-		format: px
-    -
-        id: float-medium-width
-        title: Floating Callout Width - Medium (in px)
-        type: variable-number-slider
-        default: 400
-        min: 300
-        max: 550
-        step: 50
-		format: px
-    -
-        id: float-large-width
-        title: Floating Callout Width - Large (in px)
-        type: variable-number-slider
-        default: 600
-        min: 500
-        max: 750
-        step: 50
-		format: px
-
-	-
-        id: float-gap-title
-        title: FC -- Gap & Margin
-        type: heading
-        level: 2
-		collapsed: false
-	-
-	    id: float-callout-top-margin
-		title: Adjust top margin for Float Left and Float Right
-		description: Can use em or px unit
-	    type: variable-text
-	    default: 0em
-	-
-	    id: float-left-callout-margin-inline
-		title: Adjust left-right margin for Float Left Callout
-		description: Enter in this order - "left right". Can use em or px unit
-		type: variable-text
-	    default: 0px 12px
-	-
-	    id: float-right-callout-margin-inline
-		title: Adjust left-right margin for Float Right Callout
-		description: Enter in this order - "left right". Can use em or px unit
-	    type: variable-text
-	    default: 12px 0px
-
-
-
-    -
-        id: mc-list-column-title
-        title: List Column
-		description: using `{.xxx-column-list-xxx}` and `#mcl/list-column`
-        type: heading
-        level: 1
-		collapsed: true
-	-
-        id: list-column-width-title
-        title: Width control for List Column
-        type: heading
-        level: 2
-		collapsed: false
-    -
-        id: list-min-width
-        title: Minimum Column Width (in px)
-        type: variable-number-slider
-        default: 200
-        min: 100
-        max: 500
-        step: 50
-		format: px
-
-	-
-        id: list-column-deco-title
-        title: Decoratives control for List Column
-        type: heading
-        level: 2
-		collapsed: false
-	-
-        id: col-rule-width
-        title: Ruler (vertical line between columns) width for List Column
-		description: in px unit. Set to 0 to disable ruler
-        type: variable-number-slider
-        default: 1
-        min: 0
-        max: 4
-        step: 1
-		format: px
-    -
-        id: col-rule-color
-        title: Ruler (vertical line between columns) color for List Column
-		type: variable-themed-color
-		format: hsl
-		opacity: true
-		default-light: '#'
-		default-dark: '#'
-
-
-	-
-        id: mc-list-grid-title
-        title: List Grid and List Card
-		description: using `#mcl/list-grid` and `#mcl/list-card`
-        type: heading
-        level: 1
-		collapsed: true
-
-	-
-        id: list-grid-card-width-title
-        title: Width control for List Grid and List Card
-        type: heading
-        level: 2
-		collapsed: false
-	-
-        id: list-grid-min-width
-        title: Minimum width for normal List Grid/Card
-		description: For `#mcl-list-grid` or `#mcl-list-card`. Can use em or px unit
-		type: variable-text
-		default: 250px
-	-
-        id: list-grid-wide-min-width
-        title: Minimum width for Wide List Grid/Card
-		description: For `#mcl/list-grid-wide` or `#mcl/list-card-wide`. Can use em or px unit
-		type: variable-text
-		default: 350px
-
-	-
-        id: list-card-deco-title
-        title: Decoratives control for List Card
-        type: heading
-        level: 2
-		collapsed: false
-	-
-		id: mcl-card-header-border-width
-		title: Bottom border for first header in List Card
-		description: Can use em or px unit. Set to 0 to disable the border
-		type: variable-text
-		default: 1px
-	-
-		id: mcl-card-bg-color
-		title: Background color for List Card
-		type: variable-themed-color
-		format: hsl
-		opacity: true
-		default-light: '#'
-		default-dark: '#'
-	-
-        id: mcl-card-gap
-        title: Gap between cards for List Card
-		description: Can use em or px unit
-		type: variable-text
-		default: 0.2em
-	-
-        id: mcl-card-border-width
-        title: Border width for each card in List Card
-		description: Can use em or px unit. Set to 0 to disable the border
-		type: variable-text
-		default: 1px
-	-
-		id: mcl-card-border-color
-		title: Border color for each card in List Card
-		type: variable-themed-color
-		format: hsl
-		opacity: true
-		default-light: '#'
-		default-dark: '#'
-
-*/
