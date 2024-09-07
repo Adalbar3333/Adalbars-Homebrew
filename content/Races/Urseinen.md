@@ -12,6 +12,7 @@ Living in clans of up to 200 members, led by a chief, Urseinen communities thriv
 #### Masters of Craft and Friendship:
 Renowned as skilled handymen, the Urseinen excel in carpentry, hunting, farming, and fishing. When venturing outside their clans, they become formidable soldiers. Liked by various races for their easygoing nature, they form friendships effortlessly and are known for their lack of grudges. Dwarves appreciate having a drinking companion who can match their endurance, halflings find a friend who can outeat them regularly, and elves welcome allies who share a deep connection with the natural world. Humans seek their expertise in both craftsmanship and martial prowess, leading to harmonious relationships between the Urseinen and other races.
 #### A Rite of Passage - Deirferðarrättur:
+
 > [!blank-container|float-left]
 > ![[AdalbarCasual.png|250]]
 

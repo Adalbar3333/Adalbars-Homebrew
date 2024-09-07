@@ -29,8 +29,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Races/Urseinen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,6 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Races/Urseinen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Races/Urseinen.md"
+              }
             }
           }
         ]
@@ -153,7 +156,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b5d9f7870c19e4a0",
+  "active": "b24f075cfb6e663b",
   "lastOpenFiles": [
     "Races/Urseinen.md",
     "index.md",
