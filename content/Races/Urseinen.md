@@ -1,6 +1,7 @@
 Beneath the towering canopies of dense forests and along the shores of babbling rivers, the Urseinen, a mighty race of bear folk, find their homes. Once nomadic hunters, these 10-foot-tall beings have now settled into clans, creating vibrant communities in areas blessed with water, agriculture, and bountiful hunting grounds.
 #### Fur-Covered Giants:
 
+
 Towering between 8 to 11 feet in height, the Urseinen boast a robust physique, covered in fur of various natural tones. Weighing up to 1500 pounds, they are both imposing and majestic in their appearance, a testament to their strength and resilience. Their fur, ranging in hues from earthy browns to deep blacks, serves as both protection from the elements and a symbol of their connection to the natural world. These bear folk are not merely large; they embody the spirit of the wilderness.
 
 #### Embracing Life's Short Splendor:
