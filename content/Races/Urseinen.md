@@ -22,25 +22,33 @@ A crucial rite of passage, "Deirferðarrättur," compels young Urseinen approach
 In the heart of their clans, among the towering trees and flowing waters, the Urseinen exemplify a race that embraces the challenges of life, finding joy in every moment and forging strong bonds that extend far beyond their impressive physical stature.
 ___
 ### Urseinen Traits
+> [!blank-callout|--float-left-medium]
+> ![[Large Race Rules|150]]
+
 When you choose this race, you gain the following features:
 
-**Ability Score Improvement:** +1 Constitution, +1 Wisdom. 
+**Ability Score Improvement:** +1 Constitution, +1 Wisdom.
 
-**Age:** These anthropomorphic creatures age at the rate between humans and bears, living till around 60 on average.  
+**Age:** These anthropomorphic creatures age at the rate between humans and bears, living till around 60 on average.
 
-**Size:** Your Size is Large. Please see the <u>Attributes of Being Large</u> section for more information.  
+**Size:** Your Size is Large. Please see the [[Large Race Rules]] section for more information.
 
-**Speed:** Your base walking speed is 40 feet, but you can choose to get down on all fours if your hands are free as a bonus action, making your base walking speed 60 feet. While on all fours, you are not capable of holding items, and must use your action to both slow down and stand back up.  
+**Speed:** Your base walking speed is 40 feet, but you can choose to get down on all fours if your hands are free as a bonus action, making your base walking speed 60 feet. While on all fours, you are not capable of holding items, and must use your action to both slow down and stand back up.
 
-**Natural Instinct:** These creatures have a 60ft darkvision due to their animal-like instincts, their sight is shades of grey. Additionally, all perception checks that rely on smell are made at advantage.  
+**Natural Instinct:** These creatures have a 60ft darkvision due to their animal-like instincts, their sight is shades of grey. Additionally, all perception checks that rely on smell are made at advantage.
 
 **Languages:** Common, Urseinen (Bear), and 1 of your choice.
 
+
+![[AdalbarArmor.png|250]]
+<BR><BR><BR><BR><BR><br>
+---
+
+# Subraces:
 ### Racial Feat Option: Claws
+_Pre-requisite:_ Must be an Urseinen
 
-_Pre-requisite:_ Must be an Urseinen  
-
-You gain a +1 to your Strength, Constitution, or Wisdom score. 
+You gain a +1 to your Strength, Constitution, or Wisdom score.
 You gain a claw attack that does 1d6 slashing damage. If you make a melee attack and have one hand free, you can make a second attack as a bonus action as long as both hands are free.
 
 

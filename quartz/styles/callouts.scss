@@ -1,3 +1,4 @@
+@use "./variables.scss" as *;
 @use "sass:color";
 
 .callout {
@@ -9,20 +10,37 @@
   transition: max-height 0.3s ease;
   box-sizing: border-box;
 
-  & > *:nth-child(2) {
+  & > .callout-content > :first-child {
     margin-top: 0;
   }
 
-  &[data-callout="note"] {
+  --callout-icon-note: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="2" x2="22" y2="6"></line><path d="M7.5 20.5 19 9l-4-4L3.5 16.5 2 22z"></path></svg>');
+  --callout-icon-abstract: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M12 11h4"></path><path d="M12 16h4"></path><path d="M8 11h.01"></path><path d="M8 16h.01"></path></svg>');
+  --callout-icon-info: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>');
+  --callout-icon-todo: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>');
+  --callout-icon-tip: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg> ');
+  --callout-icon-success: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> ');
+  --callout-icon-question: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> ');
+  --callout-icon-warning: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>');
+  --callout-icon-failure: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> ');
+  --callout-icon-danger: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> ');
+  --callout-icon-bug: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="14" x="8" y="6" rx="4"></rect><path d="m19 7-3 2"></path><path d="m5 7 3 2"></path><path d="m19 19-3-2"></path><path d="m5 19 3-2"></path><path d="M20 13h-4"></path><path d="M4 13h4"></path><path d="m10 4 1 2"></path><path d="m14 4-1 2"></path></svg>');
+  --callout-icon-example: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg> ');
+  --callout-icon-quote: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>');
+  --callout-icon-fold: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolyline points="6 9 12 15 18 9"%3E%3C/polyline%3E%3C/svg%3E');
+
+  &[data-callout] {
     --color: #448aff;
     --border: #448aff44;
     --bg: #448aff10;
+    --callout-icon: var(--callout-icon-note);
   }
 
   &[data-callout="abstract"] {
     --color: #00b0ff;
     --border: #00b0ff44;
     --bg: #00b0ff10;
+    --callout-icon: var(--callout-icon-abstract);
   }
 
   &[data-callout="info"],
@@ -30,30 +48,39 @@
     --color: #00b8d4;
     --border: #00b8d444;
     --bg: #00b8d410;
+    --callout-icon: var(--callout-icon-info);
+  }
+
+  &[data-callout="todo"] {
+    --callout-icon: var(--callout-icon-todo);
   }
 
   &[data-callout="tip"] {
     --color: #00bfa5;
     --border: #00bfa544;
     --bg: #00bfa510;
+    --callout-icon: var(--callout-icon-tip);
   }
 
   &[data-callout="success"] {
     --color: #09ad7a;
     --border: #09ad7144;
     --bg: #09ad7110;
+    --callout-icon: var(--callout-icon-success);
   }
 
   &[data-callout="question"] {
     --color: #dba642;
     --border: #dba64244;
     --bg: #dba64210;
+    --callout-icon: var(--callout-icon-question);
   }
 
   &[data-callout="warning"] {
     --color: #db8942;
     --border: #db894244;
     --bg: #db894210;
+    --callout-icon: var(--callout-icon-warning);
   }
 
   &[data-callout="failure"],
@@ -62,51 +89,573 @@
     --color: #db4242;
     --border: #db424244;
     --bg: #db424210;
+    --callout-icon: var(--callout-icon-failure);
+  }
+
+  &[data-callout="bug"] {
+    --callout-icon: var(--callout-icon-bug);
+  }
+
+  &[data-callout="danger"] {
+    --callout-icon: var(--callout-icon-danger);
   }
 
   &[data-callout="example"] {
     --color: #7a43b5;
     --border: #7a43b544;
     --bg: #7a43b510;
+    --callout-icon: var(--callout-icon-example);
   }
 
   &[data-callout="quote"] {
     --color: var(--secondary);
     --border: var(--lightgray);
+    --callout-icon: var(--callout-icon-quote);
   }
 
-  &.is-collapsed > .callout-title > .fold {
+  &.is-collapsed > .callout-title > .fold-callout-icon {
     transform: rotateZ(-90deg);
   }
 }
 
 .callout-title {
   display: flex;
+  align-items: flex-start;
   gap: 5px;
   padding: 1rem 0;
   color: var(--color);
 
-  & .fold {
-    margin-left: 0.5rem;
-    transition: transform 0.3s ease;
+  --icon-size: 18px;
+
+  & .fold-callout-icon {
+    transition: transform 0.15s ease;
     opacity: 0.8;
     cursor: pointer;
+    --callout-icon: var(--callout-icon-fold);
   }
 
   & > .callout-title-inner > p {
     color: var(--color);
     margin: 0;
   }
+
+  .callout-icon,
+  & .fold-callout-icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    flex: 0 0 var(--icon-size);
+
+    // icon support
+    background-size: var(--icon-size) var(--icon-size);
+    background-position: center;
+    background-color: var(--color);
+    mask-image: var(--callout-icon);
+    mask-size: var(--icon-size) var(--icon-size);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    padding: 0.2rem 0;
+  }
+
+  .callout-title-inner {
+    font-weight: $semiBoldWeight;
+  }
 }
 
-.callout-icon {
-  width: 18px;
-  height: 18px;
-  flex: 0 0 18px;
-  padding-top: 4px;
+// put your custom CSS here!
+
+body{
+	/* for list column, grid and card */
+	--list-min-width: 200px;
+	--col-rule-color: var(--background-modifier-border); /* #b3b3b3; */
+	--col-rule-width: 1px;
+	--list-grid-min-width: 250px;
+	--list-grid-wide-min-width: 350px;
+
+}
+.theme-dark {
+/*	--background-mcl-card: hsl(300, 5%, 15%); */
+}
+.theme-light {
+/*	--background-mcl-card: hsl(300, 5%, 90%); */
 }
 
-.callout-title-inner {
-  font-weight: 700;
-}
+
+/* === General === */
+
+	/* -- Fixed Width definition -- */
+	/* quadruple the last .callout to win specificity with main multi-column callout */
+	.callout[data-callout-metadata*="fw"].callout.callout.callout { flex-grow: 0; flex-shrink: 0;}
+	.callout[data-callout-metadata*="fw1"].callout.callout.callout.callout { flex-basis: 100px; width: 100px; }
+	.callout[data-callout-metadata*="fw2"].callout.callout.callout.callout { flex-basis: 200px; width: 200px; }
+	.callout[data-callout-metadata*="fw3"].callout.callout.callout.callout { flex-basis: 300px; width: 300px; }
+	.callout[data-callout-metadata*="fw4"].callout.callout.callout.callout { flex-basis: 400px; width: 400px; }
+	.callout[data-callout-metadata*="fw5"].callout.callout.callout.callout { flex-basis: 500px; width: 500px; }
+	.callout[data-callout-metadata*="fw6"].callout.callout.callout.callout { flex-basis: 600px; width: 600px; }
+	.callout[data-callout-metadata*="fw7"].callout.callout.callout.callout { flex-basis: 700px; width: 700px; }
+	.callout[data-callout-metadata*="fw8"].callout.callout.callout.callout { flex-basis: 800px; width: 800px; }
+	.callout[data-callout-metadata*="fw9"].callout.callout.callout.callout { flex-basis: 900px; width: 900px; }
+
+	.callout[data-callout-metadata*="pw1"].callout.callout.callout.callout { flex-basis: 10%; width: 10%; }
+	.callout[data-callout-metadata*="pw2"].callout.callout.callout.callout { flex-basis: 18%; width: 18%; }
+	.callout[data-callout-metadata*="pw3"].callout.callout.callout.callout { flex-basis: 28%; width: 28%; }
+	.callout[data-callout-metadata*="pw4"].callout.callout.callout.callout { flex-basis: 38%; width: 38%; }
+	.callout[data-callout-metadata*="pw5"].callout.callout.callout.callout { flex-basis: 48%; width: 48%; }
+	.callout[data-callout-metadata*="pw6"].callout.callout.callout.callout { flex-basis: 58%; width: 58%; }
+	.callout[data-callout-metadata*="pw7"].callout.callout.callout.callout { flex-basis: 68%; width: 68%; }
+	.callout[data-callout-metadata*="pw8"].callout.callout.callout.callout { flex-basis: 78%; width: 78%; }
+	.callout[data-callout-metadata*="pw9"].callout.callout.callout.callout { flex-basis: 88%; width: 88%; }
+
+
+	/* metadata "wide-x" to control subcallout flexible max width. only discrete 2,4,8,16 */
+	.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="mw0"].callout.callout { flex-basis: 0; }
+	.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="dw1"].callout { flex: 1 0 auto; }
+	.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="dw2"].callout { flex: 2 0 auto; }
+	.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="dw3"].callout { flex: 3 0 auto; }
+	.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="dw4"].callout { flex: 4 0 auto; }
+	.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="dw5"].callout { flex: 5 0 auto; }
+	.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="dw6"].callout { flex: 6 0 auto; }
+	.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="dw7"].callout { flex: 7 0 auto; }
+	.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="dw8"].callout { flex: 8 0 auto; }
+	.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="dw9"].callout { flex: 9 0 auto; }
+
+	body {
+		--mcc-img-snw-display: none;
+		--callout-min-width: 200px;
+		--callout-nowrap-min-width: 250px;
+		--callout-gap: 1em;
+		--callout-margin: 0px;
+	}
+	[data-callout="multi-column"].callout {
+		--callout-blend-mode: normal;
+	}
+
+	/* -- Main MCC Code -- */
+
+		/* remove callout-title and make callout-content as part of main callout for box formatting */
+		.callout[data-callout="multi-column"].callout > .callout-title { display: none; }
+		.callout[data-callout="multi-column"].callout > .callout-content { display: contents; }
+		/* make the main callout a flex and remove box formatting */
+		/* --columns: unset to undo Sanctum's mod */
+		.callout[data-callout="multi-column"].callout
+			{ display: flex; flex-wrap: wrap; gap: var(--callout-gap); background: unset; border: unset; margin: unset; padding: unset; clear: both; --columns: unset; }
+		/* make the subcallout in flex column to allow growing vertically */
+		.callout[data-callout="multi-column"].callout .callout:not([data-callout="multi-column"]) { display: flex; flex-direction: column; }
+		.callout[data-callout="multi-column"].callout:not(.is-collapsed) .callout { margin-inline: var(--callout-margin); margin-block: var(--callout-margin); } /* to allow spacing for box shadow */
+		.callout[data-callout="multi-column"].callout .callout .callout-content { flex-grow: 1}
+
+		.callout[data-callout="multi-column"].callout > .callout-content > *:is(div,ul,blockquote,p) { flex: 1 1 var(--callout-min-width); margin: 0;}
+
+		/* metadata "wide-x" to control subcallout flexible max width. only discrete 2,4,8,16 */
+		.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="min-0"] { flex-basis: 0; }
+		.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="wide-2"] { flex-grow: 2; }
+		.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="wide-3"] { flex-grow: 3; }
+		.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="wide-4"] { flex-grow: 4; }
+		.callout[data-callout="multi-column"].callout > .callout-content > .callout[data-callout-metadata*="wide-5"] { flex-grow: 5; }
+
+		@media (min-width: 500px) {
+			/* .is-collapsed is used to draw the border-left only when it's collapsed */
+			.callout[data-callout="multi-column"].callout > div.callout-content .callout.is-collapsed { box-shadow: unset; height: min-content;}
+		}
+
+	/* -- MCC Variant - Flexible Height for Subcallout / Children -- */
+		/* also useful if one wants to have non callout children like table and don't want to fill the height */
+		.callout[data-callout="multi-column"].callout {}
+		.callout[data-callout="multi-column"][data-callout-metadata*="flex-h"].callout { align-items: flex-start; }
+
+	/* -- MCC Variation - Fixed Columns -- */
+		.callout[data-callout="multi-column"][data-callout-metadata*="col3"]:not([data-callout-metadata*="icons"]).callout {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+	/* -- MCC Variation - Icons -- */
+
+		/* Main code */
+		.callout[data-callout="multi-column"][data-callout-metadata*="icons"] {
+
+			&.callout { justify-content: center; }
+			&.callout .callout { display: flex; flex-direction: row; flex-wrap: wrap; }
+			&.callout.callout .callout-content > p { flex-grow: 1; text-align: center; }
+			/* Options for number of columns */
+			&[data-callout-metadata*="col2"].callout.callout .callout-content > p { flex-basis: 40%; }
+			&[data-callout-metadata*="col3"].callout.callout .callout-content > p { flex-basis: 30%; }
+			&[data-callout-metadata*="col4"].callout.callout .callout-content > p { flex-basis: 22%; }
+			&[data-callout-metadata*="col5"].callout.callout .callout-content > p { flex-basis: 18%; }
+
+			/* listive theme */
+			&.callout p:first-child { margin-top: revert; }
+		}
+
+
+	/* -- MCC Variation - Fixed Width Option -- */
+		/* Fixed Width Option (using callout-metadata) */
+		.callout[data-callout="multi-column"][data-callout-metadata*="center-fixed"].callout { justify-content: center; }
+		.callout[data-callout="multi-column"][data-callout-metadata*="left-fixed"].callout { justify-content: flex-start; }
+		.callout[data-callout="multi-column"][data-callout-metadata*="right-fixed"].callout { justify-content: flex-end; }
+		.callout[data-callout="multi-column"][data-callout-metadata*="fixed"].callout > .callout-content > *:is(div,ul) { flex-grow: 0; }
+
+		/* Callout size for Fixed Width Option */
+		.callout[data-callout="multi-column"][data-callout-metadata*="fixed"][data-callout-metadata*="small"].callout > .callout-content > *:is(div,ul) { flex-basis: calc( var(--float-small-width) * 0.5 ); }
+		.callout[data-callout="multi-column"][data-callout-metadata*="fixed"][data-callout-metadata*="medium"].callout > .callout-content > *:is(div,ul) { flex-basis: calc( var(--float-medium-width) * 0.65); }
+		.callout[data-callout="multi-column"][data-callout-metadata*="fixed"][data-callout-metadata*="large"].callout > .callout-content > *:is(div,ul) { flex-basis: calc( var(--float-large-width) * 0.8); }
+
+
+	/* -- MCC Variation - No Wrap Option -- */
+
+		/* No-Wrap Option (using callout-metadata) - for single row with horizontal scrollbar */
+		.callout[data-callout="multi-column"][data-callout-metadata*="no-wrap"].callout {
+			flex-wrap: nowrap; overflow-x: scroll;
+			& > .callout-content > *:is(div,ul) { flex-shrink: 0; }
+		}
+
+		/* No-Wrap Option, Width Options. Legacy width option. better to dw, pw and fw options at the top */
+		.callout[data-callout="multi-column"][data-callout-metadata*="no-wrap"] .callout[data-callout-metadata*="small"] { flex-basis: 300px; }
+		.callout[data-callout="multi-column"][data-callout-metadata*="no-wrap"] .callout[data-callout-metadata*="medium"] { flex-basis: 400px; }
+		.callout[data-callout="multi-column"][data-callout-metadata*="no-wrap"] .callout[data-callout-metadata*="large"] { flex-basis: 600px; }
+
+		/* Align center for items in callout */
+		.callout[data-callout="multi-column"] .callout[data-callout-metadata*="center"] { text-align: center; }
+
+
+	/* -- Special Adjustment for Community Themes -- */
+
+		 /* Special Adjustment -- for theme with negative margin & box shadow. (e.g. Prism) */
+		.callout[data-callout="multi-column"].callout > .callout-content { margin-top: unset;}
+		.callout[data-callout="multi-column"].callout:not(.is-collapsed) { box-shadow: unset;}
+
+		/* Blue Topaz - remove box shadow from main [!multi-column] */
+		body[class*="notebook-liked-markdown-page"].shade-callout-style .callout[data-callout="multi-column"] { box-shadow: unset !important; }
+
+		/* Special Adjustment -- for minimal left margin *//*
+		.markdown-source-view.mod-cm6.is-readable-line-width .cm-embed-block.cm-callout > .callout[data-callout="multi-column"].callout
+			{ width: 100%; max-width: 100%; margin-inline: 0 !important; }
+
+		/* Minimal -  .dataview.list-view-ul width - Minimal set the width with --line-width-adaptive (40rem by default) */
+		body:not(.table-100):not(.table-max):not(.table-wide) .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide) .callout[data-callout="multi-column"].callout .dataview.list-view-ul {width: auto;}
+
+		/* Minimal -- Callout Outline, to ensure sub-callout not overlapped and hidden */
+		.callouts-outlined .callout[data-callout="multi-column"].callout:not(.is-collapsed) .callout:not([data-callout="multi-column"]) {
+			margin-top: 1em;
+		}
+
+
+	/* -- Special Adjustment for Plugins / Markdown Elements -- */
+
+		/* SNW plugin */
+		.callout[data-callout*="multi-column"].callout .callout-content span.image-embed + .snw-reference { display: var(--mcc-img-snw-display); }
+
+
+
+
+/* === Blank Container "DIV"'s - can be used with Main Multi-Column layout above === */
+
+	/* "blank-container" - no bg, no border, no title, no nothing, and remove the ligthen effect */
+	.callout[data-callout*="blank"].callout {--callout-blend-mode: normal;}
+	.callout[data-callout*="blank"].callout > .callout-title { display: none; }
+	.callout[data-callout*="blank"].callout > .callout-content {display: contents;}
+	.callout[data-callout*="blank"].callout { border: 0; padding-top: 0; padding-inline: 5px; background: unset; box-shadow: unset; }
+
+	.callout[data-callout-metadata*="no-margin"]:is(.cm-callout, .callout.callout, .callout.callout .callout-content) {margin: 0; padding: 0;}
+
+	/* -- No Margin for only child -- */
+		.callout[data-callout*="blank"].callout .callout-content > p:only-child {
+			margin-block: 0;
+		}
+
+
+	/* -- Special Adjustment for Themes -- */
+
+		/* Mado. Remove  theme's pseudo left border */
+		.callout[data-callout*="blank"] .callout-content::before { display: none; }
+
+
+/* === Text Justify === */
+
+	.text-justify :is(.markdown-preview-view p,.markdown-source-view .cm-line) { text-align: justify; }
+
+
+/* === Floating Callout - Base === */
+	/* float uses callout-metadata to control the layout. can apply to any callout */
+
+	/* variables */
+	body {
+		--float-small-width: 300px;
+		--float-medium-width: 400px;
+		--float-large-width: 600px;
+
+		--float-left-callout-margin: 0 15px 0 0;
+		--float-right-callout-margin: 0 0 0 15px;
+		--float-callout-top-margin: 0em;
+		--float-callout-bottom-margin: 0em;
+		--float-callout-snw-display: none;
+	}
+	/* variables */
+	body {
+		--float-left-callout-margin-inline: 0 12px;
+		--float-right-callout-margin-inline: 12px 0;
+		--float-snw-display: none;
+	}
+
+
+	/* -- Main Code. Use media query so that floats only works when there's enough width */
+	@media (min-width: 500px){
+		.markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-left"]) { display: inline; z-index: 30;}
+		.markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-left"]) > div > .callout { float: left; z-index: 30; }
+		.markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-left"]) > .edit-block-button { display: none; }
+		.markdown-reading-view .callout[data-callout-metadata*="left"].callout {float: left;}
+
+		.markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-right"]) { display: inline; z-index: 30;}
+		.markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-right"]) > div > .callout { float: right; z-index: 30; }
+		.markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-right"]) > .edit-block-button { display: none; }
+		.markdown-reading-view .callout[data-callout-metadata*="right"].callout {float: right; }
+
+		.markdown-source-view.mod-cm6 .cm-embed-block.cm-callout :is(.callout[data-callout-metadata*="left"], .callout[data-callout-metadata*="right"]) .callout-content > p:last-of-type { margin-bottom: auto;}
+
+		[data-callout-metadata*="float-right"].cm-embed-block.cm-callout {width: auto !important;}
+
+		/* remove margin from first para in the float callout */
+		.callout:is(.callout[data-callout-metadata*="left"],.callout[data-callout-metadata*="right"]) .callout-content > :is(p:first-child,ul:first-child,ol:first-child) {margin-top: 0;}
+
+		/* Adjustable Gap */
+		/* 26Mar2023 only top for now, to work on left-right later */
+		.markdown-source-view.mod-cm6 .callout:is(.callout[data-callout-metadata*="left"]),
+		.markdown-source-view.mod-cm6 .callout:is(.callout[data-callout-metadata*="right"])
+			{ margin-top: calc(1em * var(--line-height-normal) + var(--float-callout-top-margin)); }
+
+		/**/
+		.markdown-source-view.mod-cm6 .callout:is(.callout[data-callout-metadata*="left"]),
+		.markdown-reading-view .callout[data-callout-metadata*="left"].callout {
+			margin-inline: var(--float-left-callout-margin-inline);
+		}
+		.markdown-source-view.mod-cm6 .callout:is(.callout[data-callout-metadata*="right"]),
+		.markdown-reading-view .callout[data-callout-metadata*="right"].callout {
+			margin-inline: var(--float-right-callout-margin-inline);
+		}
+	}
+
+	/* -- FC Size Options -- */
+
+		/* legacy width option. better to dw, pw and fw options at the top */
+		[data-callout-metadata*="-small"].callout {width: var(--float-small-width);}
+		[data-callout-metadata*="-medium"].callout {width: var(--float-medium-width);}
+		[data-callout-metadata*="-large"].callout {width: var(--float-large-width);}
+
+
+	/* -- Special Adjustment for Plugins / Markdown Elements -- */
+
+		/* Option for Caption */
+		div:is([data-callout-metadata*="caption"]).callout > .callout-content > p .image-embed[alt]:not([alt$=".png"], [alt$=".jpg"], [alt$=".jpeg"], [alt$=".tiff"])::after {content: attr(alt); text-align: center; display: block; font-style: italic; color: var(--text-muted); }
+		div:is([data-callout-metadata*="caption"]).callout > .callout-content > p img:not(.emoji) { display: block; margin-right: auto; margin-left: auto;}
+
+		/* Introduce clear to break the float */
+			/* .markdown-preview-view h2, *//* remove this as it has weird spacing effect */
+			.embedded-backlinks { clear: both; }
+
+		/* for Blockquote underlap the float layout -- to remove by 30Jun2024, no longer needed */
+
+		/* for SNW plugin */
+		div:is([data-callout-metadata*="caption"],[data-callout-metadata*="left"],[data-callout-metadata*="right"]).callout > .callout-content > p .snw-embed-preview { display: var(--float-callout-snw-display); width: min-content; height: min-content; }
+		div:is([data-callout-metadata*="caption"],[data-callout-metadata*="left"],[data-callout-metadata*="right"]).callout > .callout-content > p .internal-embed.image-embed ~ br {display: none;}
+
+
+	/* -- Special Adjustment for Themes -- */
+
+		/* Minimal. Minimal Float. Updated for Minimal V7.4.7 */
+		/* "Reset" the default "cm-sizer" width but respect Minimal Settings, and require cssclass ".minimal-float" as Minimal own wide table will not work together with float i.e. removing :not(:has(table)) from .markdown-source-view.mod-cm6.is-readable-line-width:not(:has(table)) */
+		.minimal-float.markdown-source-view.mod-cm6 {
+			.cm-sizer {
+				max-width: var(--max-width); width: var(--line-width);
+			}
+			.cm-contentContainer.cm-contentContainer > .cm-content > div,
+			.cm-sizer > .embedded-backlinks,
+			.cm-sizer > .inline-title,
+			.cm-sizer > .metadata-container {
+				max-width: none; width: auto;
+			}
+		}
+
+		:is(body[class*="minimal-tab-title"] .markdown-source-view.mod-cm6.is-readable-line-width:not(:has(table)), .minimal-float.markdown-source-view.mod-cm6) .cm-sizer { max-width: var(--max-width); width: var(--line-width); }
+
+		:is(body[class*="minimal-tab-title"] .markdown-source-view.mod-cm6.is-readable-line-width:not(:has(table)), .minimal-float.markdown-source-view.mod-cm6) .cm-contentContainer.cm-contentContainer>.cm-content>div,
+		:is(body[class*="minimal-tab-title"] .markdown-source-view.mod-cm6.is-readable-line-width:not(:has(table)), .minimal-float.markdown-source-view.mod-cm6) .cm-sizer>.embedded-backlinks,
+		:is(body[class*="minimal-tab-title"] .markdown-source-view.mod-cm6.is-readable-line-width:not(:has(table)), .minimal-float.markdown-source-view.mod-cm6) .cm-sizer>.inline-title,
+		:is(body[class*="minimal-tab-title"] .markdown-source-view.mod-cm6.is-readable-line-width:not(:has(table)), .minimal-float.markdown-source-view.mod-cm6) .cm-sizer>.metadata-container
+			{ max-width: none; width: auto; }
+
+
+		/* Minimal - fix to support Breadcrumbs plugin. Sub to the above LP float fix for Minimal */
+			body[class*="minimal-tab-title"].contextual-typography .minimal-float.markdown-preview-view.markdown-preview-view .BC-trail.markdown-preview-sizer { display: flex; }
+
+		/* Minimal - Size Option fix due to !important */
+		/* Minimal. Uses body[class*="minimal-tab-title"] as identifier. To override (have higher specificity) the width param. Can be merged to main code later on */
+		@media (min-width: 500px){
+			body[class*="minimal-tab-title"] .markdown-source-view.mod-cm6.is-readable-line-width .cm-embed-block.cm-callout > .callout[data-callout-metadata$="small"].callout { width: var(--float-small-width) !important; margin-left: 0 !important; }
+			body[class*="minimal-tab-title"] .markdown-source-view.mod-cm6.is-readable-line-width .cm-embed-block.cm-callout > .callout[data-callout-metadata$="medium"].callout { width: var(--float-medium-width) !important; margin-left: 0 !important; }
+		}
+		@media (min-width: 750px){
+			body[class*="minimal-tab-title"] .markdown-source-view.mod-cm6.is-readable-line-width .cm-embed-block.cm-callout > .callout[data-callout-metadata$="large"].callout { width: var(--float-large-width); margin-left: 0 !important; }
+		}
+
+
+/* === List Column ===*/
+
+
+	/* -- List Column/Grid/Card general styling -- */
+
+		/* hide tag in rendered view, dim it in edit mode and small size */
+		:is(.callout[class*="mcl"].markdown-rendered, .markdown-rendered) a[href*="#mcl"] {display: none;}
+		/* :is(.callout[class*="mcl"].markdown-rendered, .markdown-rendered .callout[class*="mcl"]) a[href*="#mcl"] {display: none;} */
+		.cm-s-obsidian .HyperMD-list-line span[class*="mcl"] {background-color: var(--background-primary) !important; color: var(--text-faint); font-size: 0.9rem; }
+
+
+	/* -- List Column using YAML cssclass and Markdown Attributes i.e. {.three-column-list-block} -- */
+
+		/* define the column gap and column rule */
+		.two-column-list div > ul,   .two-column-list-block,
+		.three-column-list div > ul,  .three-column-list-block,
+		.four-column-list div > ul,  .four-column-list-block,
+		.multi-column-list div > ul,  .multi-column-list-block
+			{ column-gap: 3rem; column-rule: var(--col-rule-width) solid var(--col-rule-color); }
+
+		/* define the column count, for fixed number of columns, to subject it to note's width (in future can use @container when installer v1.2.7 widely used ) */
+		@media (min-width: 500px ){
+			.two-column-list div > ul,   .two-column-list-block {columns: 2; }
+			.three-column-list div > ul,  .three-column-list-block {columns: 3; }
+			.four-column-list div > ul,  .four-column-list-block {columns: 4; }
+		}
+		.multi-column-list div > ul,  .multi-column-list-block { column-width: var(--list-min-width); }
+
+		/* Special adjustment for footnotes applied with -colum-list-block -- obsidian creates a <br> tag at the last <li> */
+		.footnotes [class$="-column-list-block"] li:last-of-type br:last-of-type {display: none;}
+
+
+	/* -- List Column Using Tag (using CSS has) -- */
+
+		/* set the column rules at ul level and adjust the margin */
+		ul:has(> li > [data-heading] > [href*="#mcl/list-column"]),
+		ul:has(> li > [href*="#mcl/list-column"]) {
+			margin-top: 0;
+            column-width: var(--list-min-width); column-gap: 1rem;
+            column-rule: var(--col-rule-width) solid var(--col-rule-color);
+        }
+
+		/* give some margin for the div, for first ul only */
+		div:has(> ul > li > [href*="#mcl/list-column"]),
+		div:has(> ul > li > [data-heading] > [href*="#mcl/list-column"])
+			{ margin-top: 0.8em; }
+
+		/* readjust [!blank] display contents */
+		.callout[data-callout*="blank"] > .callout-content:has(li [href*="#mcl/list-column"]) {display: block; margin: 0; padding: 0; }
+
+
+	/* -- General Adjustment for List Column -- */
+
+		/* Adjustment for misaligned bullets (this is a hack, need to find better solution later) */
+		ul:has([href="#mcl/list-column"]) li > .list-bullet::after, /* :has() */
+		.markdown-preview-view[class*="column-list"] li > .list-bullet::after, /* yaml cssclass */
+		.tag-mcllist-column ul li > .list-bullet::after, /* contextual typography */
+		ul[class*="column-list"] li > .list-bullet::after /* markdown attributes */
+			{ position: relative; }
+
+
+	/* -- Special Adjustment for Plugins for List Column -- */
+
+		/* for Custom Classes */
+		div.cc-container:has(li > [href="#mcl/list-column"]) { width: 100%; }
+
+
+
+/* === List Grid (using hashtag) === */
+	/* supported (1) :has() and (2) Contextual Typography plugin */
+
+	/* -- Main Code -- */
+
+		ul:has(> li > [data-heading] > [href*="#mcl/list-grid"]),
+		ul:has(> li > [href*="#mcl/list-grid"]),
+		.callout[class*="mcllist-grid"] ul:first-child
+			{ display: grid; grid-template-columns: repeat(auto-fit,minmax(var(--list-grid-min-width),1fr)); }
+
+		ul:has(> li > [data-heading] > [href*="#mcl/list-grid-wide"]),
+		ul:has(> li > [href*="#mcl/list-grid-wide"]),
+		.callout[class*="mcllist-grid-wide"] ul:first-child
+			{ grid-template-columns: repeat(auto-fit,minmax(var(--list-grid-wide-min-width),1fr)); }
+
+		ul:has(> li > [data-heading] > [href*="#mcl/list-grid"]) > li:not(:last-of-type),
+		ul:has(> li > [href*="#mcl/list-grid"]) > li:not(:last-of-type),
+		.callout[class*="mcllist-grid"] ul:first-child > li:not(:last-of-type)
+			{ padding-right: 1.6em; }
+
+		ul:has(> li > [data-heading] > [href*="#mcl/list-grid-sm"]),
+		ul:has(> li > [href*="#mcl/list-grid-sm"]),
+		.callout[class*="mcllist-grid-sm"] ul:first-child
+			{ --list-grid-min-width: 20%; }
+
+
+		/* - dashboard style, page level only, apply to any first level */
+		/* -- applicable only when width > 400pt, else just single column */
+		/* grid list block level cannot be done, it breaks formatting */
+		@media (min-width: 500px) {
+			.two-column-grid-list div > ul { display: grid; grid-column-gap:3em; grid-template-columns:repeat(2,1fr);}
+		}
+		@media (min-width: 600px) {
+			.three-column-grid-list div > ul { display: grid; grid-column-gap:3em; grid-template-columns:repeat(3,1fr);}
+		}
+
+
+
+/* === List Card (using hashtag) === */
+	/* supported (1) :has() and (2) Contextual Typography plugin */
+
+	body {
+		--mcl-card-header-border-width: 1px;
+		--mcl-card-bg-color: var(--background-secondary);
+		--mcl-card-gap: 0.2em;
+		--mcl-card-border-width: 1px;
+		--mcl-card-border-color: var(--background-modifier-border);
+	}
+
+	/* -- Main Code -- */
+
+		/* make the list grid, remove some ul padding */
+
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), [class*="mcllist-card"]) ul:first-child { display: grid; grid-template-columns: repeat(auto-fit,minmax(var(--list-grid-min-width),1fr)); margin-block-start: 0.5em; }
+		:is(div:has(> ul [data-heading*="#mcl/list-card-wide"]), [class*="mcllist-card-wide"]) ul:first-child { grid-template-columns: repeat(auto-fit, minmax(var(--list-grid-wide-min-width),1fr));}
+		/* unindent first level bullet */
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul ul:not(ul ul ul) { padding-left: 0.1em; } /* with v1.6 this is somewhat redundant */
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul ul:not(ul ul ul) > li { margin-inline-start: 0; }
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), div:has(> ul [data-heading*="#mcl/list-card"]) .callout-content, .tag-mcllist-card, .tag-mcllist-card .callout-content) > ul { padding-left: 0; }
+		:is(.is-mobile .markdown-preview-section) :is(div:has([data-heading*="#mcl/list-card"]), .tag-mcllist-card) :is(ol:not(ol ol ol),  ul:not(ul ul ul)) {padding-left: 0;}
+		/* reposition the collapse indicator and hover behaviour */
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), div:has(> ul [data-heading*="#mcl/list-card"]) .callout-content, .tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li {position: relative;}
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), div:has(> ul [data-heading*="#mcl/list-card"]) .callout-content, .tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li:hover > .collapse-indicator,
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), div:has(> ul [data-heading*="#mcl/list-card"]) .callout-content, .tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li > ul > li:hover > .collapse-indicator {opacity: 1;}
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), div:has(> ul [data-heading*="#mcl/list-card"]) .callout-content, .tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li > .collapse-indicator,
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), div:has(> ul [data-heading*="#mcl/list-card"]) .callout-content, .tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li > ul > li > .collapse-indicator {position: absolute; right: 0.7em; padding-right: 0;}
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul::before {display: none;}
+		/* decorate the first heading for cards */
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [data-heading*="#mcl/list-card"]) .callout-content, .tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li:not(.is-collapsed) > [data-heading] {border-bottom: var(--mcl-card-header-border-width) solid var(--mcl-card-border-color); margin-bottom: 0.2em;}
+		/* hide the list bullet for list-card for first and second level */
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) > div > div > ul > li > .list-bullet::after,
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) > div > div > ul > li > ul > li > .list-bullet::after,
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) > ul > li::before,
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) > ul > li > ul > li::before,
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) > ul > li > .list-bullet::after,
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) > ul > li > ul > li > .list-bullet::after {visibility: hidden;}
+		/* remove the indentation guide */
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul:not(ul ul ul ul)::before {--indentation-guide-width: 0;}
+		.markdown-rendered.show-indentation-guide :is(div:has(> ul [data-heading*="#mcl/list-card"]), .tag-mcllist-card) li > ul::before,
+		.markdown-rendered.show-indentation-guide :is(div:has(> ul [data-heading*="#mcl/list-card"]), .tag-mcllist-card) li > ol::before {border-right: 0; border-left: 0; }
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) li {list-style: none;}
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) li li li {list-style: circle;}
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) .callout ul:not(ul ul) > li,
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul:not(ul ul) > li
+			{ margin-inline: var(--mcl-card-gap); margin-bottom: calc(var(--mcl-card-gap)*2); padding: 0.3em 0.5em; outline: var(--mcl-card-border-width) solid var(--mcl-card-border-color); border-radius: 0.5em; background-color: var(--mcl-card-bg-color);}
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul:not(ul ul) > li img {width: 100%;}
+		:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul img {margin: 0; float: none;}
+
+
+	/* -- Special Adjustment for Themes -- */
+
+		/* Sanctum */
+		.markdown-rendered .tag-mcllist-card ul img[alt*=right] {margin: 0;}
 
