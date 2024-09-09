@@ -7,7 +7,7 @@ Grizzly Urseinen traditions are tied to the cycles of nature, with the *[[IPA#Gr
 > [!infobox|wfull] 
 > ## Traits of a Grizzly Ursein
 > 
-> > [!infobox|clean left wm-sm]
+> > [!infobox|clean left 45%]
 > > ### Ability Score Increase
 > > Your Strength score increases by 1.
 > > (+1 Con from Urseinen, -1 Dex and +1 Str from Size)
@@ -23,7 +23,7 @@ Grizzly Urseinen traditions are tied to the cycles of nature, with the *[[IPA#Gr
 > > ### Skill Proficiency
 > > You gain proficiency in one of the following skills: Athletics, Survival, or Intimidation.
 >
-> >[!infobox|clean right wm-sm]
+> >[!infobox|clean right 45%]
 > >### Bear Slam
 > >_You pick up a target and slam them into the ground with your immense strength._
 > >As an action, you can target one creature within 5 feet of you that is no more than one size larger than you. The target must make a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a failed save, the target takes 2d10 bludgeoning damage and is knocked prone. On a successful save, the target takes half as much damage and is not knocked prone. You can use this ability once per short rest. 
