@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Races/Urseinen/Urseinen Subrace - Grizzly.md",
+                "file": "Races/Urseinen/Urseinen.md",
                 "mode": "preview",
                 "source": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Races/Urseinen/Urseinen Subrace - Grizzly.md",
+                "file": "Races/Urseinen/Urseinen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Races/Urseinen/Urseinen Subrace - Grizzly.md",
+                "file": "Races/Urseinen/Urseinen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Races/Urseinen/Urseinen Subrace - Grizzly.md"
+                "file": "Races/Urseinen/Urseinen.md"
               }
             }
           }
@@ -222,8 +222,8 @@
   "active": "4fe6ffc13f583430",
   "lastOpenFiles": [
     "index.md",
-    "Races/Urseinen/Urseinen.md",
     "Races/Urseinen/Urseinen Subrace - Grizzly.md",
+    "Races/Urseinen/Urseinen.md",
     "IPA.md",
     "Races/Urseinen/Urseinen Subrace - Wild.md",
     "Races/Urseinen/Urseinen Subrace - Arctic.md",
