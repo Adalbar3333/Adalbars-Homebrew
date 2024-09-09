@@ -1,7 +1,6 @@
 Beneath the towering canopies of dense forests and along the shores of babbling rivers, the Urseinen, a mighty race of bear folk, find their homes. Once nomadic hunters, these 10-foot-tall beings have now settled into clans, creating vibrant communities in areas blessed with water, agriculture, and bountiful hunting grounds.
 #### Fur-Covered Giants:
 
-
 Towering between 8 to 11 feet in height, the Urseinen boast a robust physique, covered in fur of various natural tones. Weighing up to 1500 pounds, they are both imposing and majestic in their appearance, a testament to their strength and resilience. Their fur, ranging in hues from earthy browns to deep blacks, serves as both protection from the elements and a symbol of their connection to the natural world. These bear folk are not merely large; they embody the spirit of the wilderness.
 
 #### Embracing Life's Short Splendor:
@@ -14,7 +13,7 @@ Living in clans of up to 200 members, led by a chief, Urseinen communities thriv
 Renowned as skilled handymen, the Urseinen excel in carpentry, hunting, farming, and fishing. When venturing outside their clans, they become formidable soldiers. Liked by various races for their easygoing nature, they form friendships effortlessly and are known for their lack of grudges. Dwarves appreciate having a drinking companion who can match their endurance, halflings find a friend who can outeat them regularly, and elves welcome allies who share a deep connection with the natural world. Humans seek their expertise in both craftsmanship and martial prowess, leading to harmonious relationships between the Urseinen and other races.
 #### A Rite of Passage - Deirferðarrättur:
 
-> [!blank-container|float-left]
+> [!infobox|clean left]
 > ![[AdalbarCasual.png|250]]
 
 A crucial rite of passage, "Deirferðarrättur," compels young Urseinen approaching adulthood at the age of 8 to spend 5 years exploring the world. They gather skills and trades to bring back to their clan, enhancing their status based on contributions. This ritual not only shapes individuals but elevates the prosperity of their entire community. The journey during these formative years is seen as a sacred pilgrimage, and the knowledge acquired becomes a valuable asset for the entire clan. The returning youths are welcomed as heroes, bringing not just skills but tales of the vast world beyond, enriching the cultural tapestry of their people.
@@ -23,7 +22,7 @@ A crucial rite of passage, "Deirferðarrättur," compels young Urseinen approach
 In the heart of their clans, among the towering trees and flowing waters, the Urseinen exemplify a race that embraces the challenges of life, finding joy in every moment and forging strong bonds that extend far beyond their impressive physical stature.
 ___
 ### Urseinen Traits
-> [!blank-callout|--float-left-medium]
+> [!infobox|left clean]
 > ![[Large Race Rules|150]]
 
 When you choose this race, you gain the following features:
@@ -40,9 +39,9 @@ When you choose this race, you gain the following features:
 
 **Languages:** Common, Urseinen (Bear), and 1 of your choice.
 
-
 ![[AdalbarArmor.png|250]]
 <BR><BR><BR><BR><BR><br>
+<br>
 ---
 
 # Subraces:
