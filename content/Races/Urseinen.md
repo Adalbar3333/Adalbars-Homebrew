@@ -23,7 +23,7 @@ In the heart of their clans, among the towering trees and flowing waters, the Ur
 ___
 ### Urseinen Traits
 > [!infobox|left clean]
-> ![[Large Race Rules|150]]
+> ![[Large Race Rules|250]]
 
 When you choose this race, you gain the following features:
 
