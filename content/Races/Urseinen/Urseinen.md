@@ -16,7 +16,7 @@ Renowned as skilled handymen, the Urseinen excel in carpentry, hunting, farming,
 > [!infobox|clean left]
 > ![[AdalbarCasual.png|250]]
 
-A crucial rite of passage, "Deirferðarrättur," compels young Urseinen approaching adulthood at the age of 8 to spend 5 years exploring the world. They gather skills and trades to bring back to their clan, enhancing their status based on contributions. This ritual not only shapes individuals but elevates the prosperity of their entire community. The journey during these formative years is seen as a sacred pilgrimage, and the knowledge acquired becomes a valuable asset for the entire clan. The returning youths are welcomed as heroes, bringing not just skills but tales of the vast world beyond, enriching the cultural tapestry of their people.
+A crucial rite of passage, "[[IPA#Deirferðarrättur|Deirferðarrättur]]," compels young Urseinen approaching adulthood at the age of 8 to spend 5 years exploring the world. They gather skills and trades to bring back to their clan, enhancing their status based on contributions. This ritual not only shapes individuals but elevates the prosperity of their entire community. The journey during these formative years is seen as a sacred pilgrimage, and the knowledge acquired becomes a valuable asset for the entire clan. The returning youths are welcomed as heroes, bringing not just skills but tales of the vast world beyond, enriching the cultural tapestry of their people.
 
 
 In the heart of their clans, among the towering trees and flowing waters, the Urseinen exemplify a race that embraces the challenges of life, finding joy in every moment and forging strong bonds that extend far beyond their impressive physical stature.
@@ -27,13 +27,13 @@ ___
 
 When you choose this race, you gain the following features:
 
-**Ability Score Improvement:** +1 Constitution, +1 Wisdom.
+**Ability Score Improvement:** +1 Constitution
 
 **Age:** These anthropomorphic creatures age at the rate between humans and bears, living till around 60 on average.
 
 **Size:** Your Size is Large. Please see the [[Large Race Rules]] section for more information.
 
-**Speed:** Your base walking speed is 40 feet, but you can choose to get down on all fours if your hands are free as a bonus action, making your base walking speed 60 feet. While on all fours, you are not capable of holding items, and must use your action to both slow down and stand back up.
+**Speed:** Your base walking speed is 40 feet. 
 
 **Natural Instinct:** These creatures have a 60ft darkvision due to their animal-like instincts, their sight is shades of grey. Additionally, all perception checks that rely on smell are made at advantage.
 
