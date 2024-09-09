@@ -24,9 +24,11 @@ In the heart of their clans, among the towering trees and flowing waters, the Ur
 > ### Urseinen Traits
 > 
 > > [!infobox|left clean whalf]  
+> > 
 > > ![[Large Race Rules|clean]] 
->
+> 
 > > [!infobox|right clean whalf]
+> > 
 > > When you choose this race, you gain the following features:
 > > ### Ability Score Improvement
 > > You gain a +1 to your Constitution.
