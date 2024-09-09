@@ -22,7 +22,7 @@ A crucial rite of passage, "Deirferðarrättur," compels young Urseinen approach
 In the heart of their clans, among the towering trees and flowing waters, the Urseinen exemplify a race that embraces the challenges of life, finding joy in every moment and forging strong bonds that extend far beyond their impressive physical stature.
 ___
 ### Urseinen Traits
-> [!infobox|left clean wmed]
+> [!infobox|left clean wm-sm]
 > ![[Large Race Rules]]
 
 When you choose this race, you gain the following features:
@@ -40,8 +40,7 @@ When you choose this race, you gain the following features:
 **Languages:** Common, Urseinen (Bear), and 1 of your choice.
 
 ![[AdalbarArmor.png|250]]
-<BR><BR><BR><BR><BR><br>
-<br>
+
 ---
 
 # Subraces:
