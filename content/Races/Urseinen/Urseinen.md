@@ -22,7 +22,6 @@ A crucial rite of passage, "[[IPA#Deirferðarrättur|Deirferðarrättur]]," comp
 In the heart of their clans, among the towering trees and flowing waters, the Urseinen exemplify a race that embraces the challenges of life, finding joy in every moment and forging strong bonds that extend far beyond their impressive physical stature.
 > [!infobox|wfull]
 > ### Urseinen Traits
-> 
 > > [!infobox|left clean whalf]  
 > > 
 > > ![[Large Race Rules|clean]] 
