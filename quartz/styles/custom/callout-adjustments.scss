@@ -43,6 +43,7 @@
   --callout-tiny: 20%;
   --callout-small: 30%;
   --callout-small-med: 40%;
+  --callout-half: 48%;
   --callout-med-small: 50%;
   --callout-medium: 60%;
   --callout-med-tall: 80%;
@@ -63,6 +64,10 @@
 .callout.callout.callout[data-callout-metadata~=ws-med] {
   max-width: unset;
   width: var(--callout-small-med);
+}
+.callout.callout.callout[data-callout-metadata~=whalf] {
+  max-width: unset;
+  width: var(--callout-half);
 }
 .callout.callout.callout[data-callout-metadata~=wm-sm] {
   max-width: unset;
@@ -97,6 +102,7 @@
   --callout-tiny: 100px;
   --callout-small: 200px;
   --callout-small-med: 300px;
+  --callout-half: 375px;
   --callout-med-small: 400px;
   --callout-medium: 500px;
   --callout-med-tall: 600px;

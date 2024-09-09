@@ -34,69 +34,75 @@
 
 /* --- Sizing --- */
 .callout.callout.callout {
-    --callout-micro: 10%;
-    --callout-tiny: 20%;
-    --callout-small: 30%;
-    --callout-small-med: 40%;
-    --callout-med-small: 50%;
-    --callout-medium: 60%;
-    --callout-med-tall: 80%;
-    --callout-tall: 95%;
-  }
-  .callout.callout.callout[data-callout-metadata~=wmicro] {
-    max-width: unset;
-    width: var(--callout-micro);
-  }
-  .callout.callout.callout[data-callout-metadata~=wtiny] {
-    max-width: unset;
-    width: var(--callout-tiny);
-  }
-  .callout.callout.callout[data-callout-metadata~=wsmall] {
-    max-width: unset;
-    width: var(--callout-small);
-  }
-  .callout.callout.callout[data-callout-metadata~=ws-med] {
-    max-width: unset;
-    width: var(--callout-small-med);
-  }
-  .callout.callout.callout[data-callout-metadata~=wm-sm] {
-    max-width: unset;
-    width: var(--callout-med-small);
-  }
-  .callout.callout.callout[data-callout-metadata~=wmed] {
-    max-width: unset;
-    width: var(--callout-medium);
-  }
-  .callout.callout.callout[data-callout-metadata~=wm-tl] {
-    max-width: unset;
-    width: var(--callout-med-tall);
-  }
-  .callout.callout.callout[data-callout-metadata~=wtall] {
-    max-width: unset;
-    width: var(--callout-tall);
-  }
-  .callout.callout.callout[data-callout-metadata~=sban], .callout.callout.callout[data-callout-metadata~=wfull] {
-    width: 100%;
-    float: unset;
-    max-width: 100%;
-  }
+  --callout-micro: 10%;
+  --callout-tiny: 20%;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-half: 48%;
+  --callout-med-small: 50%;
+  --callout-medium: 60%;
+  --callout-med-tall: 80%;
+  --callout-tall: 95%;
+}
+.callout.callout.callout[data-callout-metadata~=wmicro] {
+  max-width: unset;
+  width: var(--callout-micro);
+}
+.callout.callout.callout[data-callout-metadata~=wtiny] {
+  max-width: unset;
+  width: var(--callout-tiny);
+}
+.callout.callout.callout[data-callout-metadata~=wsmall] {
+  max-width: unset;
+  width: var(--callout-small);
+}
+.callout.callout.callout[data-callout-metadata~=ws-med] {
+  max-width: unset;
+  width: var(--callout-small-med);
+}
+.callout.callout.callout[data-callout-metadata~=whalf] {
+  max-width: unset;
+  width: var(--callout-half);
+}
+.callout.callout.callout[data-callout-metadata~=wm-sm] {
+  max-width: unset;
+  width: var(--callout-med-small);
+}
+.callout.callout.callout[data-callout-metadata~=wmed] {
+  max-width: unset;
+  width: var(--callout-medium);
+}
+.callout.callout.callout[data-callout-metadata~=wm-tl] {
+  max-width: unset;
+  width: var(--callout-med-tall);
+}
+.callout.callout.callout[data-callout-metadata~=wtall] {
+  max-width: unset;
+  width: var(--callout-tall);
+}
+.callout.callout.callout[data-callout-metadata~=sban], .callout.callout.callout[data-callout-metadata~=wfull] {
+  width: 100%;
+  float: unset;
+  max-width: 100%;
+}
 
-  .callout.callout.callout[data-callout-metadata~=wfit] {
-    width: fit-content;
-    max-width: min-content;
-  }
-  
-  .callout.callout[data-callout-metadata~=static] {
-    /* Callout sizing uses percentages by default, |static switches to pixels to use static sizing */
-    --callout-micro: 50px;
-    --callout-tiny: 100px;
-    --callout-small: 200px;
-    --callout-small-med: 300px;
-    --callout-med-small: 400px;
-    --callout-medium: 500px;
-    --callout-med-tall: 600px;
-    --callout-tall: 700px;
-  }
+.callout.callout.callout[data-callout-metadata~=wfit] {
+  width: fit-content;
+  max-width: min-content;
+}
+
+.callout.callout[data-callout-metadata~=static] {
+  /* Callout sizing uses percentages by default, |static switches to pixels to use static sizing */
+  --callout-micro: 50px;
+  --callout-tiny: 100px;
+  --callout-small: 200px;
+  --callout-small-med: 300px;
+  --callout-half: 375px;
+  --callout-med-small: 400px;
+  --callout-medium: 500px;
+  --callout-med-tall: 600px;
+  --callout-tall: 700px;
+}
 
 /* --- Title Adjustments --- */
 .callout.callout.callout.callout:is([data-callout-metadata~=no-t],
