@@ -20,28 +20,27 @@ A crucial rite of passage, "[[IPA#Deirferðarrättur|Deirferðarrättur]]," comp
 
 
 In the heart of their clans, among the towering trees and flowing waters, the Urseinen exemplify a race that embraces the challenges of life, finding joy in every moment and forging strong bonds that extend far beyond their impressive physical stature.
-___
-### Urseinen Traits
-> [!infobox|left clean wm-sm]
-> ![[Large Race Rules|clean]]
-
-When you choose this race, you gain the following features:
-
-**Ability Score Improvement:** +1 Constitution
-
-**Age:** These anthropomorphic creatures age at the rate between humans and bears, living till around 60 on average.
-
-**Size:** Your Size is Large. Please see the [[Large Race Rules]] section for more information.
-
-**Speed:** Your base walking speed is 40 feet. 
-
-**Natural Instinct:** These creatures have a 60ft darkvision due to their animal-like instincts, their sight is shades of grey. Additionally, all perception checks that rely on smell are made at advantage.
-
-**Languages:** Common, Urseinen (Bear), and 1 of your choice.
-
-![[AdalbarArmor.png|250]]
-
----
+> [!infobox|wfull]
+> ### Urseinen Traits
+> > [!infobox|left clean wm-sm]
+> > ![[Large Race Rules|clean]]
+>
+> > [!infobox|right clean wfit]
+> > When you choose this race, you gain the following features:
+> > 
+> > **Ability Score Improvement:** +1 Constitution
+> > 
+> > **Age:** These anthropomorphic creatures age at the rate between humans and bears, living till around 60 on average.
+> > 
+> > **Size:** Your Size is Large. Please see the [[Large Race Rules]] section for more information.
+> > 
+> > **Speed:** Your base walking speed is 40 feet. 
+> > 
+> > **Natural Instinct:** These creatures have a 60ft darkvision due to their animal-like instincts, their sight is shades of grey. Additionally, all perception checks that rely on smell are made at advantage.
+> > 
+> > **Languages:** Common, Urseinen (Bear), and 1 of your choice.
+> > 
+> > ![[AdalbarArmor.png|275]]
 
 # Subraces:
 As an Urseinen, you are granted a subrace to select some additional bonuses. 
