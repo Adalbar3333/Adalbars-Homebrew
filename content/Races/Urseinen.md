@@ -22,8 +22,8 @@ A crucial rite of passage, "Deirferðarrättur," compels young Urseinen approach
 In the heart of their clans, among the towering trees and flowing waters, the Urseinen exemplify a race that embraces the challenges of life, finding joy in every moment and forging strong bonds that extend far beyond their impressive physical stature.
 ___
 ### Urseinen Traits
-> [!infobox|left clean]
-> ![[Large Race Rules|250]]
+> [!infobox|left clean wmed]
+> ![[Large Race Rules]]
 
 When you choose this race, you gain the following features:
 
