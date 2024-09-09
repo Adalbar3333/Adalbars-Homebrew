@@ -1,0 +1,208 @@
+{
+  "main": {
+    "id": "1256a0efad082a1e",
+    "type": "split",
+    "children": [
+      {
+        "id": "d2b6930ffd974212",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4fe6ffc13f583430",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Races/Urseinen/Urseinen.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "85383fc4adbab8f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Races/Urseinen/Urseinen.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "1dd0bb9d18bf63e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Races/Urseinen/Urseinen Subrace - Forest.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ff99dcae72fb6b47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Races/Urseinen/Urseinen Subrace - Arctic.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "05aaa780363b4211",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Races/Urseinen/Urseinen Subrace - Grizzly.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d048f3183ac0e7bf",
+    "type": "split",
+    "children": [
+      {
+        "id": "d13dd5ba5fae5b3c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7049fe893df7a138",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fb791c77dd13cb43",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "33cc6d94d1f01865",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ebe3f37d01af3de9",
+    "type": "split",
+    "children": [
+      {
+        "id": "fc02fbb6aad7fc9b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4b13fe1f7811b9e8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Races/Urseinen/Urseinen.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f1a42fa9fd460782",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Races/Urseinen/Urseinen.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "01f9f2e7f0a3b294",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "22970ad19c16e451",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Races/Urseinen/Urseinen.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "85383fc4adbab8f0",
+  "lastOpenFiles": [
+    "Races/Urseinen/Urseinen Subrace - Wild.md",
+    "Races/Urseinen/Urseinen Subrace - Grizzly.md",
+    "Races/Urseinen/Urseinen Subrace - Forest.md",
+    "Races/Urseinen/Urseinen Subrace - Arctic.md",
+    "Races/Urseinen/Urseinen.md",
+    "Untitled.md",
+    "Races/Urseinen"
+  ]
+}

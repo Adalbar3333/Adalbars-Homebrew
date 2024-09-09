@@ -22,7 +22,6 @@ A crucial rite of passage, "Deirferðarrättur," compels young Urseinen approach
 In the heart of their clans, among the towering trees and flowing waters, the Urseinen exemplify a race that embraces the challenges of life, finding joy in every moment and forging strong bonds that extend far beyond their impressive physical stature.
 ___
 ### Urseinen Traits
->
 > [!infobox|left clean wm-sm]
 > ![[Large Race Rules]]
 
@@ -45,6 +44,17 @@ When you choose this race, you gain the following features:
 ---
 
 # Subraces:
+As an Urseinen, you are granted a subrace to select some additional bonuses. 
+
+|                       Name                       | Summary                                                                                                                                                                         |
+| :----------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|  [[Urseinen Subrace - Arctic\|Arctic Urseinen]]  | These bearfolk hail from icy tundras and arctic regions. Adapted to cold climates, they excel at surviving extreme conditions and are often skilled hunters and swimmers.       |
+|  [[Urseinen Subrace - Forest\|Forest Urseinen]]  | Forest bearfolk are smaller but highly adaptable, often living in dense forests. They are excellent climbers and have a natural instinct for moving silently in the wilderness. |
+| [[Urseinen Subrace - Grizzly\|Grizzly Urseinen]] | Grizzly-bear folk are strong and resilient, often living in mountainous or forested regions. They are known for their brute strength and ability to endure harsh environments.  |
+|    [[Urseinen Subrace - Wild\|Wild Urseinen]]    | Wild bearfolk are gentle and peaceful, preferring harmony with nature. They live in secluded, natural environments and are often seen as protectors of the land.                |
+
+
+
 ### Racial Feat Option: Claws
 _Pre-requisite:_ Must be an Urseinen
 
