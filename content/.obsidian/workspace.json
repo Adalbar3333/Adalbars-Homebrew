@@ -8,6 +8,18 @@
         "type": "tabs",
         "children": [
           {
+            "id": "275381ccf55553f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "4fe6ffc13f583430",
             "type": "leaf",
             "state": {
@@ -80,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -130,8 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ebe3f37d01af3de9",
@@ -211,9 +222,10 @@
   "active": "05aaa780363b4211",
   "lastOpenFiles": [
     "Races/Urseinen/Urseinen.md",
+    "index.md",
+    "IPA.md",
     "Races/Urseinen/Urseinen Subrace - Grizzly.md",
     "Races/Urseinen/Urseinen Subrace - Wild.md",
-    "IPA.md",
     "Races/Urseinen/Urseinen Subrace - Arctic.md",
     "Races/Urseinen/Urseinen Subrace - Forest.md",
     "Races/Urseinen"

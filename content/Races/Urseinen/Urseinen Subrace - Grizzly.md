@@ -6,12 +6,15 @@ Family is the core of Grizzly Urseinen life, with large extended families living
 Grizzly Urseinen traditions are tied to the cycles of nature, with the *[[IPA#Grunvholl|Grunvholl]]*, often in tandem with the [[Urseinen#A Rite of Passage - Deirferðarrättur|Deirferðarrättur]], marking the transition to adulthood through a set of physical and spiritual trials. The *Roar of the Ancestors* honors the spirits of the dead with offerings, seeking their guidance. The *Bear's Embrace* celebrates the seasons with feasts, storytelling, and ritual dances. Totems are passed down, symbolizing personal connections to nature. These traditions bind the Urseinen to their heritage, ensuring balance between honoring the past and embracing the future. They are a people deeply connected to the land and its rhythms.
 # Traits of a Grizzly Ursein
 **Ability Score Increase**: Your Strength score increases by 1.
+(+1 Con from Urseinen, -1 Dex and +1 Str from Size)
 
 **Alignment**: Grizzly Urseinen tend toward lawful or neutral alignments, as they respect the order of nature and the balance of the wilderness.
 
-**Size**: Grizzly Urseinen are the largest of the Urseinen. It would be fair to say a Grizzly Urseinen is 12 to 13 feet tall, weight anywhere from 2000 to 3000 pounds. 
+**Size**: Grizzly Urseinen are the largest of the Urseinen. It would be fair to say a Grizzly Urseinen is 12 to 13 feet tall, weight anywhere from 2000 to 3000 pounds. Your Size is Large. Please see the [[Large Race Rules]] section for more information.
 
-**Speed**: Your base walking speed is 40 feet. 
+**Speed:** Your base walking speed is 40 feet.
+
+**Natural Instinct:** These creatures have a 60ft darkvision due to their animal-like instincts, their sight is shades of grey. Additionally, all perception checks that rely on smell are made at advantage.
 
 ### Bear Slam
 _You pick up a target and slam them into the ground with your immense strength._
