@@ -26,7 +26,7 @@
               "type": "markdown",
               "state": {
                 "file": "Races/Urseinen/Urseinen.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             }
@@ -74,7 +74,7 @@
               "type": "markdown",
               "state": {
                 "file": "Races/Urseinen/Urseinen Subrace - Grizzly.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             }
@@ -221,12 +221,12 @@
   },
   "active": "05aaa780363b4211",
   "lastOpenFiles": [
-    "IPA.md",
-    "Races/Urseinen/Urseinen Subrace - Grizzly.md",
     "Races/Urseinen/Urseinen.md",
+    "Races/Urseinen/Urseinen Subrace - Grizzly.md",
+    "Races/Urseinen/Urseinen Subrace - Arctic.md",
+    "IPA.md",
     "index.md",
     "Races/Urseinen/Urseinen Subrace - Wild.md",
-    "Races/Urseinen/Urseinen Subrace - Arctic.md",
     "Races/Urseinen/Urseinen Subrace - Forest.md",
     "Races/Urseinen"
   ]
