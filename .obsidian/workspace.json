@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Races/Urseinen/Urseinen.md",
-                "mode": "source",
+                "file": "content/Races/Urseinen/Urseinen Subrace - Arctic.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Urseinen"
+              "title": "Urseinen Subrace - Arctic"
             }
           }
         ]
@@ -171,8 +171,9 @@
   },
   "active": "6a02906395147855",
   "lastOpenFiles": [
-    "content/Races/Urseinen/Urseinen Subrace - Arctic.md",
     "content/Races/Urseinen/Urseinen.md",
+    "content/Races/Urseinen/Urseinen Subrace - Grizzly.md",
+    "content/Races/Urseinen/Urseinen Subrace - Arctic.md",
     "content/Races/Urseinen/Urseinen Subrace - Forest.md",
     "content/images/ArticUrseinen.png",
     "content/images/AdalbarCasual.png",

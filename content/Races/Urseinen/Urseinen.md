@@ -6,11 +6,11 @@ Towering between 8 to 11 feet in height, the Urseinen boast a robust physique, c
 #### Embracing Life's Short Splendor:
 With an average lifespan of 68 years, the Urseinen have a profound connection with family. Celebrating mortality, they hold fertility and combat in high esteem, often having large families and praising the joy of life, even at the expense of a few broken bones. In Urseinen society, scars are worn as badges of honor, a testament to a life fully lived. Children are regarded as treasures, and the clan celebrates their arrival with joyous ceremonies, reinforcing the importance of family bonds.
 
-#### Clans and Bearish Bonds:
-Living in clans of up to 200 members, led by a chief, Urseinen communities thrive. The clan's expansion is facilitated by sending one child to establish a new clan, negotiating self-governance with ruling bodies in different areas or countries. This migration strategy not only ensures the survival of the Urseinen but also establishes alliances and friendships with neighboring regions. Each clan is a close-knit family, and the bond between members is unbreakable, fostering a sense of unity that extends beyond the immediate family circle.
-
 > [!infobox|clean right]
 > ![[AdalbarArmor.png|275]]
+
+#### Clans and Bearish Bonds:
+Living in clans of up to 200 members, led by a chief, Urseinen communities thrive. The clan's expansion is facilitated by sending one child to establish a new clan, negotiating self-governance with ruling bodies in different areas or countries. This migration strategy not only ensures the survival of the Urseinen but also establishes alliances and friendships with neighboring regions. Each clan is a close-knit family, and the bond between members is unbreakable, fostering a sense of unity that extends beyond the immediate family circle.
 
 #### Masters of Craft and Friendship:
 Renowned as skilled handymen, the Urseinen excel in carpentry, hunting, farming, and fishing. When venturing outside their clans, they become formidable soldiers. Liked by various races for their easygoing nature, they form friendships effortlessly and are known for their lack of grudges. Dwarves appreciate having a drinking companion who can match their endurance, halflings find a friend who can outeat them regularly, and elves welcome allies who share a deep connection with the natural world. Humans seek their expertise in both craftsmanship and martial prowess, leading to harmonious relationships between the Urseinen and other races.
