@@ -2,12 +2,14 @@
 
 Born beneath the pale glow of frozen moons and among the endless howl of blizzards, the Arctic Urseinen are the enduring guardians of the far north. Their clans dwell across glacial coastlines, frozen pine forests, and tundras where few other peoples can survive. Massive even among their kin, these Urseinen possess dense layers of pale fur ranging from snow-white to silver-gray and deep frost-black, allowing them to vanish against ice and storm alike.
 
+> [!infobox|left clean]
+> ![[ArticUrseinen.png]]
+
 The Arctic clans live a harsher life than many Urseinen communities. Food is earned through dangerous hunts across frozen seas, battles with monstrous predators beneath the ice, and long migrations through merciless winters. Because survival depends upon unity, Arctic Urseinen value loyalty above nearly all else. A clanmate abandoned in the cold is considered a stain upon the spirit that can haunt generations.
 
 Though stern at first glance, Arctic Urseinen are deeply hospitable. Travelers who survive the frozen wastes are welcomed beside roaring hearthfires and fed until they can barely stand. Stories, songs, and carved bone talismans are treasured traditions among these clans, preserving the memory of ancestors who survived winters that swallowed entire kingdoms.
 
-> [!infobox|left clean]
-> ![[ArticUrseinen.png|320]]
+
 
 During the *Deirferðarrättur*, young Arctic Urseinen are often encouraged to travel southward so they may learn how softer lands survive without the discipline demanded by winter. Those who return bring back knowledge of metallurgy, farming, medicine, and warfare, strengthening the clan against both famine and invasion.
 
