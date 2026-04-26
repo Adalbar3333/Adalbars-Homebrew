@@ -24,6 +24,8 @@ You gain a +1 to your Constitution and Strength.
 These anthropomorphic creatures age at the rate between humans and bears, living till around 60 on average.
 ### Cold Resistance
 You gain cold resistance. Additionally, when you make saves against environmental dangers in a the Artic or Mountainous terrains, you gain advantage. 
+### Elemental Attunement
+You gain the *Frostbite* cantrip and can cast *Burning Hands* once per short rest with it's damage type replaced with `cold` damage.
 ### Massive Weight
 Your carrying capacity is doubled when determining your push, pull, drag, or carrying weights. 
 ### Size
