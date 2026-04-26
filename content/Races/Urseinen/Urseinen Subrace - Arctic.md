@@ -6,6 +6,9 @@ The Arctic clans live a harsher life than many Urseinen communities. Food is ear
 
 Though stern at first glance, Arctic Urseinen are deeply hospitable. Travelers who survive the frozen wastes are welcomed beside roaring hearthfires and fed until they can barely stand. Stories, songs, and carved bone talismans are treasured traditions among these clans, preserving the memory of ancestors who survived winters that swallowed entire kingdoms.
 
+> [!infobox|left clean]
+> ![[ArticUrseinen.png|320]]
+
 During the *Deirferðarrättur*, young Arctic Urseinen are often encouraged to travel southward so they may learn how softer lands survive without the discipline demanded by winter. Those who return bring back knowledge of metallurgy, farming, medicine, and warfare, strengthening the clan against both famine and invasion.
 
 Arctic Urseinen are especially respected as trackers, sailors of icy waters, whale hunters, and protectors against creatures that emerge during long polar nights. Many outsiders believe them stoic giants, but among trusted friends they are known for booming laughter, fierce loyalty, and an almost childlike joy when celebrating victories over nature’s cruelty.
@@ -30,5 +33,3 @@ These creatures have a 60ft darkvision due to their animal-like instincts, their
 ### Languages
 Common, Urseinen (Bear), and 1 of your choice.
 
-> [!infobox|clean left]
-> ![[ArticUrseinen.png|250]]
