@@ -14,8 +14,8 @@
               "type": "markdown",
               "state": {
                 "file": "content/Races/Urseinen/Urseinen Subrace - Arctic.md",
-                "mode": "preview",
-                "source": false
+                "mode": "source",
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Urseinen Subrace - Arctic"
@@ -171,11 +171,12 @@
   },
   "active": "6a02906395147855",
   "lastOpenFiles": [
+    "content/Races/Urseinen/Urseinen.md",
+    "content/Races/Urseinen/Urseinen Subrace - Forest.md",
+    "content/Races/Urseinen/Urseinen Subrace - Arctic.md",
     "content/images/ArticUrseinen.png",
     "content/images/AdalbarCasual.png",
     "content/images/ArticUrseinen.jpg",
-    "content/Races/Urseinen/Urseinen Subrace - Arctic.md",
-    "content/Races/Urseinen/Urseinen.md",
     "content/Races/Half-Giant.md",
     "content/Races/Minotaur.md",
     "content/Races/Large Race Rules.md"

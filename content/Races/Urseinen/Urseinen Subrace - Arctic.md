@@ -21,6 +21,6 @@
 > > Your carrying capacity is doubled when determining your push, pull, drag, or carrying weights. 
 > 
 > > [!infobox|left clean whalf]
-> > ![[ArticUrseinen.png]]
+> > ![[ArticUrseinen.png|400]]
 > 
 > 
