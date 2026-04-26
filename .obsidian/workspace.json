@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Races/Urseinen/Urseinen Subrace - Arctic.md",
+                "file": "content/Races/Urseinen/Urseinen.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Urseinen Subrace - Arctic"
+              "title": "Urseinen"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Races/Urseinen/Urseinen Subrace - Arctic.md",
+                "file": "content/Races/Urseinen/Urseinen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Urseinen Subrace - Arctic"
+              "title": "Backlinks for Urseinen"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Races/Urseinen/Urseinen Subrace - Arctic.md",
+                "file": "content/Races/Urseinen/Urseinen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Urseinen Subrace - Arctic"
+              "title": "Outgoing links from Urseinen"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Races/Urseinen/Urseinen Subrace - Arctic.md",
+                "file": "content/Races/Urseinen/Urseinen.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Urseinen Subrace - Arctic"
+              "title": "Outline of Urseinen"
             }
           }
         ]
@@ -171,8 +171,8 @@
   },
   "active": "6a02906395147855",
   "lastOpenFiles": [
-    "content/Races/Urseinen/Urseinen.md",
     "content/Races/Urseinen/Urseinen Subrace - Arctic.md",
+    "content/Races/Urseinen/Urseinen.md",
     "content/Races/Urseinen/Urseinen Subrace - Forest.md",
     "content/images/ArticUrseinen.png",
     "content/images/AdalbarCasual.png",

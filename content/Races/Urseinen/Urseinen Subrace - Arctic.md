@@ -22,4 +22,4 @@
 > 
 > > [!infobox|left clean whalf]
 > > 
-> > ![[ArticUrseinen.png]]
+> > ![[ArticUrseinen.png|250]]

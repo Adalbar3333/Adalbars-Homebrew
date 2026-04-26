@@ -9,6 +9,9 @@ With an average lifespan of 68 years, the Urseinen have a profound connection wi
 #### Clans and Bearish Bonds:
 Living in clans of up to 200 members, led by a chief, Urseinen communities thrive. The clan's expansion is facilitated by sending one child to establish a new clan, negotiating self-governance with ruling bodies in different areas or countries. This migration strategy not only ensures the survival of the Urseinen but also establishes alliances and friendships with neighboring regions. Each clan is a close-knit family, and the bond between members is unbreakable, fostering a sense of unity that extends beyond the immediate family circle.
 
+> [!infobox|clean right]
+> ![[AdalbarArmor.png|275]]
+
 #### Masters of Craft and Friendship:
 Renowned as skilled handymen, the Urseinen excel in carpentry, hunting, farming, and fishing. When venturing outside their clans, they become formidable soldiers. Liked by various races for their easygoing nature, they form friendships effortlessly and are known for their lack of grudges. Dwarves appreciate having a drinking companion who can match their endurance, halflings find a friend who can outeat them regularly, and elves welcome allies who share a deep connection with the natural world. Humans seek their expertise in both craftsmanship and martial prowess, leading to harmonious relationships between the Urseinen and other races.
 #### A Rite of Passage - Deirferðarrättur:
@@ -20,29 +23,7 @@ A crucial rite of passage, "[[IPA#Deirferðarrättur|Deirferðarrättur]]," comp
 
 
 In the heart of their clans, among the towering trees and flowing waters, the Urseinen exemplify a race that embraces the challenges of life, finding joy in every moment and forging strong bonds that extend far beyond their impressive physical stature.
-> [!infobox|wfull]
-> ## Urseinen Traits
-> 
-> > [!infobox|left clean whalf]  
-> > 
-> > ![[Large Race Rules|clean]] 
-> 
-> > [!infobox|right clean whalf]
-> > 
-> > When you choose this race, you gain the following features:
-> > ### Ability Score Improvement
-> > You gain a +1 to your Constitution.
-> > ### Age
-> > These anthropomorphic creatures age at the rate between humans and bears, living till around 60 on average.
-> > ###Size
-> > Your Size is Large. Please see the [[Large Race Rules]] section for more information.
-> > ### Speed
-> > Your base walking speed is 40 feet. 
-> > ### Natural Instinct 
-> > These creatures have a 60ft darkvision due to their animal-like instincts, their sight is shades of grey. Additionally, all perception checks that rely on smell are made at advantage.
-> > ### Languages
-> > Common, Urseinen (Bear), and 1 of your choice.
-> > ![[AdalbarArmor.png|275]]
+
 
 # Subraces:
 As an Urseinen, you are granted a subrace to select some additional bonuses. 
