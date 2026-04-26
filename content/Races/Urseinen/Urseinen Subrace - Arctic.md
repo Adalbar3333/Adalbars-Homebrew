@@ -30,5 +30,5 @@ These creatures have a 60ft darkvision due to their animal-like instincts, their
 ### Languages
 Common, Urseinen (Bear), and 1 of your choice.
 
-> [!infobox|left clean]
+> [!infobox|clean left]
 > ![[ArticUrseinen.png|250]]
